@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pirata-tecnologico
+    env: node
+    buildCommand: npm ci && npm run build
+    startCommand: npx serve -s build
+    nodeVersion: 18.17.1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: REACT_APP_API_URL
+        value: https://piratabackend.onrender.com/api
