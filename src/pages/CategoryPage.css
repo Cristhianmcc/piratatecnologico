@@ -1,0 +1,172 @@
+.category-page {
+  padding-bottom: 3rem;
+}
+
+.category-hero {
+  height: 300px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85));
+  z-index: 1;
+}
+
+.category-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.category-icon-large {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.category-icon-large i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.category-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.category-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+}
+
+.breadcrumb ul {
+  display: flex;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.breadcrumb li {
+  font-size: 0.9rem;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: '/';
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.breadcrumb a:hover {
+  opacity: 1;
+}
+
+.category-programs {
+  margin-top: 1rem;
+}
+
+.category-programs .section-header {
+  margin-bottom: 2rem;
+}
+
+.category-programs .program-count {
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  margin-left: 1rem;
+}
+
+.no-programs {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.no-programs i {
+  font-size: 3rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.no-programs h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.no-programs p {
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  color: var(--text-light);
+}
+
+.error-container {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .category-hero {
+    height: 250px;
+  }
+  
+  .category-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .category-icon-large {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .category-icon-large i {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-hero {
+    height: 200px;
+  }
+  
+  .category-hero p {
+    font-size: 0.9rem;
+  }
+  
+  .breadcrumb {
+    display: none;
+  }
+}
